@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Model-View-Controller (MVC)",
+    "postMessage": "MVC is an architectural pattern that structures a codebase in three distinct sections, according to a software design philosophy known as the separation of concerns."
+  },
+
+  {
+    "title": "What is a Model?",
+    "postMessage": "The Model is the data layer of the application. It is concerned with the structure of the database and the logic used to retrieve that data."
+  },
+
+  {
+    "title": "What is the Controller?",
+    "postMessage": "The Controller handles input from the user, interacts with the Model to create, read, update, or delete data, and then returns the results of that query to the user via the View layer."
+  }
+
+
+]
