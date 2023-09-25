@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Blogposts extends Model {}
+class Blogposts extends Model { }
 
 Blogposts.init(
   {
@@ -18,8 +18,7 @@ Blogposts.init(
     postMessage: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-  
+    }
   },
   {
     sequelize,
