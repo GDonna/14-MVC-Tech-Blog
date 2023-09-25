@@ -14,5 +14,4 @@
     "postMessage": "The Controller handles input from the user, interacts with the Model to create, read, update, or delete data, and then returns the results of that query to the user via the View layer."
   }
 
-
 ]
