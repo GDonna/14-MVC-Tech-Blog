@@ -1,7 +1,7 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
-class Posts extends Model { }
+class Posts extends Model {}
 
 Posts.init(
   {
@@ -18,13 +18,13 @@ Posts.init(
     postMessage: {
       type: DataTypes.STRING,
       allowNull: false,
-    }
+    },
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Posts',
+    modelName: "Posts",
   }
 );
 

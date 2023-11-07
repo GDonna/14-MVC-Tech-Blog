@@ -15,4 +15,4 @@ Comments.belongsTo(User, {
 });
 
 
-module.exports = { User, Blogposts };
+module.exports = {User, Post, Comments};
