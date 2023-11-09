@@ -1,12 +1,12 @@
 const express = require('express');
-const { Post, User } = require('../models');
+const { Blogposts, User } = require('../models');
 const router = express();
 
 router.get('/', async (req, res) => {
 
   try {
     // Get all projects and JOIN with user data
-    const dbblogData = await Post.findAll({
+    const dbblogData = await Blogposts.findAll({
       include: [User]
     });
 
@@ -25,7 +25,7 @@ router.get('/blogposts/:id', async (req, res) => {
 
   try {
     // Get a single post by its `id` and JOIN with user data
-    const dbblogData = await Post.findByPk({
+    const dbblogData = await Blogposts.findByPk({
       include: [User,
         {
           model: Comment,
@@ -60,6 +60,6 @@ router.get('/signup', (req, res) => {
     return;
   }
 
-  res.render('singup');
+  res.render('signup');
 });
 module.exports = router;

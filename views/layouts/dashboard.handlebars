@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h1>Welcome to your Tech Blog</h1>
+    <h1>Tech Blog Dashboard</h1>
   </header>
   <nav>
     <a href="/">Home</a>
@@ -25,7 +25,7 @@
     </aside>
     <div>
       {{#if logged_in}}
-        <a href="/profile">profile</a> |
+        <a href="/">profile</a> |
         <button class="button" id="logout">logout</button>
         {{else}}
         <a href="/login">login</a>
@@ -38,7 +38,7 @@
     </div>
   </main>
      <footer>
-      <a href="/dashboard/new">+ New Post</a> |
+      <a href="/dashboard/new"> Add New Post </a> |
     </footer>
 </body>
 <script src="/js/logout.js"></script>
