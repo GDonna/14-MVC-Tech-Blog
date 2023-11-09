@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const seedPosts = require('./BlogData');
+const seedPosts = require('./BlogData.json');
 
 
 const seedAll = async () => {
